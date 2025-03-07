@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS AVANCE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="./image et logo/sygnet@2x.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   
+    <header>
+        <div class="menu-icon" ><img src="./image et logo/menu_vert.jpg" onclick="toggleMenu()" alt="menu" id="menup"></div>
+        <nav class="header">
+            <div class="logo"> <img src="./image et logo/sygnet@2x.png" alt="logo" class="d">Docplanner<span>Group</span></div>
+            <ul class="forme">
+                <i class="fas fa-times" onclick="fermer()"></i>
+                <li><a href="#">Aboutus</a></li>
+                <li><a href="#">Career</a></li>
+                <li class="double"><a href="#">Departments</a>
+                    <div>
+                <ul id="cacher">
+                <li><a href="#">Marketing & PR</a></li>
+                <li><a href="#">Cuntomer Success & Sales</a></li>
+                <li><a href="#">IT,Product, Data</a></li>
+                <li><a href="#">Finace & Administration</a></li>
+                <li><a href="#">HR & more</a></li>
+                </ul>
+                   </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="./image et logo/logo.png" alt="logo">
+        <h1>Making the healthcare experience more human</h1>
+        <div class="position">
+            <p>
+                We want patients to find the perfect doctor and book an appointment in the most easy way. 
+                The patient journey should be enjoyable, and that’s why we are always next to them: 
+                to help them find the best possible care. Anytime, anywhere.
+            </p>
+            <p>
+                We also help doctors to better manage their practice and build their online reputation. With our integrated end-to-end solution, doctors are able not only to improve their online presence, but also to devote their time to what really matters: their patients.
+                Please check the <a href=""> 2025 Docplanner Trust and Transparency Report</a>
+            </p>
+        </div>
+    </section>
+    <section class="cards-container">
+        <div class="card patient">
+            <img src="./image et logo/img_vert.jpg" alt="sybole" class="db">
+            <h2>For patients</h2>
+            <p>Find a doctor, book a visit and solve any health-related doubt</p>
+           
+                <select>
+                <option value="">Choose country </option>
+                <option value="">Argentina</option>
+                <option value="">Bazil</option>
+                <option value="">Chile</option>
+                <option value="">Colombia</option>
+                <option value="">Czech</option>
+                <option value="">Germany</option>
+                <option value="">Italy</option>
+                <option value="">Mexico</option>
+                <option value="">Peru</option>
+                <option value="">Poland</option>
+                <option value="">Portugal</option>
+                <option value="">Spain</option>
+                <option value="">Turkey</option>
+            </select>
+          
+        </div>
+
+        <div class="card doctor">
+            <img src="./image et logo/img_bleu.jpg" alt="sybole" class="db">
+            <h2>For doctors</h2>
+            <p>Save time managing visits and cut no-shows by half</p>
+            
+                <select>
+                    <option value="">Choose country </option>
+                    <option value="">Argentina</option>
+                    <option value="">Bazil</option>
+                    <option value="">Chile</option>
+                    <option value="">Colombia</option>
+                    <option value="">Czech</option>
+                    <option value="">Germany</option>
+                    <option value="">Italy</option>
+                    <option value="">Mexico</option>
+                    <option value="">Peru</option>
+                    <option value="">Poland</option>
+                    <option value="">Portugal</option>
+                    <option value="">Spain</option>
+                    <option value="">Turkey</option>
+                </select>
+           
+        </div>
+
+        <div class="card clinic">
+            <img src="./image et logo/img_noir.jpg" alt="sybole" class="db">
+            <h2>For clinics</h2>
+            <p id="clinic">Deliver an exceptional patient experience in your clinic</p>
+            
+                <select>
+                    <option value="">2 to 20 specialists</option>
+                    <option >Bazil</option>
+                    <option >Czech</option>
+                    <option >Germany</option>
+                    <option value="I">Italy</option>
+                    <option value="">Mexico</option>
+                    <option value="">Poland</option>
+                    <option value="">Spain</option>
+                    <option value="">Turkey</option>
+                </select>
+           
+           
+            <select name="" id="pousse">
+                <option value="">More than 20 specialists</option>
+                <option value="">Bazil</option>
+                <option value="">Italy</option>
+                <option value="">Mexico</option>
+                <option value="">Poland</option>
+                <option value="">Spain</option>
+            </select>
+            
+        </div>
+    </section>
+    <section class="apres_carte">
+        <div class="le_text">
+            We are a global <br> company <br> with local culture
+        </div>
+        <div class="group1">
+            <P class="p1"><a href="#"><img src="./image et logo/img_m1.jpg" alt="img"></a> <a href="#"><img src="./image et logo/img_m2.jpg" alt="m2"></a></P>
+            <P class="p2"><a href="#"><img src="./image et logo/img_m1.jpg" alt="m1"></a> <a href="#"><img src="./image et logo/img_m6.jpg" alt="m6"></a></P>
+            <p class="p3"><a href="#"><img src="./image et logo/img_m10.jpg" alt="m10"></a><a href="#"><img src="./image et logo/img_m11.jpg" alt="m11"></a></p>
+        </div>
+        <div class="group2">
+            <P class="p1"><a href="#"><img src="./image et logo/img_m3.jpg" alt="m3"></a><a href="#"><img src="./image et logo/img_m4.jpg" alt="m4"></a></P>
+            <p class="p2"><a href="#"><img src="./image et logo/img_m7.jpg" id="m7" alt="m7"></a><a href="#"><img src="./image et logo/img_m8.jpg" id="m8" alt="m8"><a href="#"><img src="./image et logo/img_m9.jpg" id="m9" alt=""></a></a></p>
+        </div>
+
+    </section>
+    <section class="healthcare-platform">
+        <div class="text-section">
+            <div class="textc">
+                <h1>The world's biggest healthcare platform</h1>
+                <p>We work from 11 offices all over the world, bringing Docplanner <br> Group to life in 13 countries.</p>
+            </div>
+              <div class="coucher">
+                <img src="./image et logo/logo.png" alt="image" id="fontcart">
+              </div>
+               
+              
+        </div>
+        <div class="stats-container">
+            <div class="ligne1">
+                <div class="stat-card">
+                    <img src="./image et logo/flag@2x.png" alt="Flag Icon" class="dg">
+                    <h3>Leader in 13 countries</h3>
+                    <p>Poland, Brazil, Mexico, Spain, Italy, Germany, Turkey, Colombia, Czech Republic, Portugal, Argentina, Peru and Chile</p>
+                </div>
+                <div class="stat-card">
+                    <img src="./image et logo/patients@2x.png" alt="Patient Icon" class="dg">
+                    <h3>80,000,000 patients</h3>
+                    <P>visit our websites each month</P>
+                </div>
+            </div>
+            <div class="ligne2">
+                <div class="stat-card">
+                    <img src="./image et logo/visits@2x.png" alt="Calendar Icon" class="dg">
+                    <h3>22,000,000 appointments</h3>
+                    <p>booked last month</p>
+                </div>
+                <div class="stat-card" id="pousse">
+                    <img src="./image et logo/doctors@2x.png" alt="Doctor Icon" class="dg">
+                    <h3>260,000 active doctors</h3>
+                    <p>trust our solution</p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="about-section">
+        <div class="content">
+            <span>Improve the lives of millions. <br> Change yours forever.</span>
+            <p>More than 2800 team mates share our same vision, goals, and passion.
+           With offices in Amsterdam (HQ), Warsaw, Barcelona, Munich, Istanbul, Rome, Rio, Bologna, Mexico City and Curitiba, our search for great talent never stops.</p>
+        </div>
+    </section>
+    <section class="locations">
+        <div class="city">
+            <img src="./image et logo/warsaw@2x.png" alt="Warsaw">
+           <p class="desc">
+            <span>Warsaw</span>  
+            <button>SEE OPENINGS</button>
+           </p>
+        </div>
+
+        <div class="city">
+            <img src="./image et logo/barcelona@2x.png" alt="Barcelona">
+            <P class="desc">
+             <span>Barcelona</span>
+            <button>SEE OPENINGS</button>
+            </P>
+        </div>
+
+        <div class="city">
+            <img src="./image et logo/munich@2x.png" alt="Munich">
+            <p class="desc">
+                <span> Munich</span>
+                <button>SEE OPENINGS</button>
+            </p>
+        </div>
+        <div class="city">
+            <img src="./image et logo/istanbul@2x.png" alt="istanbul">
+           <p class="desc">
+            <span>istanbul</span>
+            <button>SEE OPENINGS</button>
+           </p>
+        </div>
+        <div class="city">
+            <img src="./image et logo/rome@2x.png" alt="rome">
+            <p class="desc">
+                <span>Rome</span>
+                <button>SEE OPENINGS</button>
+            </p>
+        </div>
+
+        <div class="city">
+            <img src="image et logo/bologna@2x.png" alt="bologna">
+            <p class="desc">
+            <span> Munich</span>
+            <button>SEE OPENINGS</button>
+            </p> 
+        </div>
+        <div class="city">
+            <img src="./image et logo/curitiba@2x.png" alt="curitiba">
+            <p class="desc">
+                <span>curitiba</span>
+                <button>SEE OPENINGS</button>
+            </p>
+        </div>
+
+        <div class="city">
+            <img src="./image et logo/rio-janeiro@2x.png" alt="rio-janeiro">
+            <p class="desc">
+            <span> Rio De janeiro</span>
+            <button>SEE OPENINGS</button>
+            </p>
+        </div>
+
+        <div class="city">
+            <img src="./image et logo/mexico-city@2x.png" alt="mexico">
+            <p class="desc">
+                <span>Mexico City</span>
+                <button>SEE OPENINGS</button>
+            </p>
+        </div>
+    </section>
+    <Section class="reste">
+        <div class="city">
+            <img src="./image et logo/bogota@2x.png" alt="bogota">
+            <p class="desc">
+                <span>Bogota</span>
+            <button>SEE OPENINGS</button>
+            </p>
+        </div>
+        <div class="city">
+            <img src="./image et logo/amsterdam@2x.png" alt="Amsterdam">
+           <p class="desc">
+            <span>Amsterdam</span>
+            <button>SEE OPENINGS</button>
+           </p>
+        </div>
+    </Section>
+    <footer>
+        <div class="footer">
+            <p>sounds intesting? Join us now !</p>
+            <button>SEE ALL CURRENT OPENINGS</button>
+        </div>
+       <div class="footerT">
+        <p>We are leaders in 13 countries; <a href="#">Poland</a>, <a href="#">Turkey</a>,
+        <a href="#">Spain</a>,<a href="#">Italy</a>,<a href="#">Germany</a>,<a href="#">Czech Republic</a>,
+        <a href="#">Portugal</a>,<a href="#">Mexico</a>,<a href="#">Colombia</a>,<a href="#">Bazil</a>,
+        <a href="#">Argentina</a>,<a href="#">Peru</a> and <a href="#">Chile</a>
+        </p>
+        <span>www.docplanner.com © 2025</span>
+       </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

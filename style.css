@@ -1,0 +1,626 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Barre de navigation */
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    position:fixed;
+    left: 0px;
+    right: 0px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 110px;
+    padding-right: 110px;
+
+}
+.d{
+    width:40px;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00b39b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo span {
+    color: #666;
+}
+
+ nav .forme {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.forme ul li {
+    display: inline-flex;
+    cursor: pointer;
+    
+}
+
+ nav .forme li a {
+    text-decoration:none;
+    color: #666;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #00b39b;
+    cursor: pointer;
+}
+
+ .forme #cacher{
+    width: 250px;
+    background-color: #fefefe;
+    padding: 2px;
+    position: absolute;
+    right: 30px;
+    padding-top: 10px;
+    display: none;
+    
+}
+.forme #cacher li{
+    padding: 5px;
+    padding-bottom: 10px;
+    font-size:13px;
+    color: #666;
+    cursor: pointer;
+}
+.forme #cacher li a{
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+}
+.forme #cacher li a:hover{
+    color: #00b39b;
+    cursor: pointer;
+}
+
+/* Section Hero */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    color: #00b39b;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.position{
+    display:inline-flex;
+}
+.hero p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    padding-left: 20px;
+    text-align: left;
+
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style: normal;
+   
+}
+.hero{
+    padding-top: 140px;
+   /* display: flex;*/
+    flex-wrap: wrap;
+
+}
+.hero img{
+    width:45px;
+}
+/*troixieme section*/
+.apres_carte{
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.apres_carte div img{
+    width:110px;
+    padding-right:30px;
+}
+.apres_carte div img:hover{
+    color: #00b39b;
+    font-weight: bold;
+
+}
+#m7{
+   height:20px;
+   padding-bottom: 5px;
+}
+#m8,#m9{
+    width: 45px;
+}
+.le_text{
+    color: #00b39b ;
+    font-size:25px;
+}
+/* Section des cartes */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap:wrap;
+}
+
+.card {
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+    height:300px;
+}
+.sb{
+    display: inline-block;
+    transform: rotate(270deg);
+    padding: 0px;
+    margin: 0px;
+    
+}
+.patient {
+    background-color: #00b39b;
+}
+
+.doctor {
+    background-color: #3d83df;
+}
+
+.cards-container div p{
+    padding-bottom:112px;
+    font-size:25px;
+}
+.cards-container div a{
+    font-size:17px;
+}
+#clinic{
+    padding-bottom:70px;
+}
+.clinic {
+    background-color: #1b2734;
+
+}
+.db{
+    width:25px;
+}
+.card h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card a {
+    color: white;
+    text-decoration: underline;
+    display: block;
+    margin-top: 10px;
+    font-size: 17px;
+}
+select{
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+    border: none;
+    outline: none;
+    font-size:20px;
+
+}
+select option{
+    color: black;
+}
+/*section suvante*/
+/*healthcare-platform*/
+.healthcare-platform {
+   justify-content: space-between;
+   padding-top:20px;
+   padding-right: 100px;
+    background-color: #e0f7f3;
+    display: flex;
+}
+
+/* Titre et description */
+.textc{
+    text-align: center;
+}
+.text-section h1 {
+    font-size: 30px;
+    color: #00b39b;
+}
+
+.text-section p {
+    font-size: 16px;
+    color: #666;
+    
+}
+.coucher{
+    display: flex;
+    justify-content: left;
+    height:200px;
+}
+#fontcart{
+height: 500px;
+}
+
+.ligne2{
+    display: flex;
+    flex-direction: column;
+   padding-bottom:30px;
+    height: 500px;
+   
+}
+.ligne1{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:5px;
+    height: 500px;
+    padding-top:15px;
+}
+/* Conteneur des statistiques */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Cartes */
+.stat-card {
+    width: 195px;
+    height:270px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin:10px;
+    
+}
+
+.stat-card img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.stat-card h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #00b39b;
+}
+
+.stat-card p {
+    font-size: 14px;
+  color: #666;
+}
+/*section suivante*/
+/*abaut-section*/
+.about-section {
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+}
+/* Contenu texte */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content span{
+    font-size: 33px;
+    color: #00b39b;
+    text-decoration: none;
+   
+}
+
+.content p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+/*section suivante*/
+/* location */
+
+header span {
+    color: #333;
+}
+
+/* Section des villes */
+.locations {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.reste{
+    display: flex;
+    gap: 20px;
+    padding-left: 160px;
+    flex-wrap: wrap;
+}
+.reste div img{
+    width:300px;
+    height: 270px;
+}
+.locations div img{
+    width:300px;
+    height: 270px;
+}
+.desc{
+    display: flex;
+    justify-content: space-around;
+}
+/* Cartes des villes */
+.city {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.dg{
+    width:10px;
+}
+.city:hover {
+   /* transform: translateY(-5px);*/
+   box-shadow: 6px 9px 12px rgb(228, 227, 227);
+}
+
+/* Images */
+.city img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Titres */
+.city h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Boutons */
+.city button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 13px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 10px;
+    
+}
+
+.city button:hover {
+    background:#0056b3;
+}
+/*footer de la page*/
+footer button{
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.footer p{
+    font-size:50px;
+}
+.footer{
+    background-color:white;
+    padding-top: 90px;
+    padding-bottom: 130px;
+    text-align: center;
+}
+.footerT{
+    text-align: center;
+    padding-bottom:20px;
+}
+.footerT p a{
+    text-decoration: none;
+}
+/*le menu invisible*/
+#menup{
+    width: 30px;
+    position: absolute;
+    right: 60px;
+    cursor: pointer;
+    display:none;
+}
+.fa-times{
+    width: 500px;
+    color: white;
+    position: relative;
+    right: 40px;
+}
+@media (max-width:499px) {
+    .forme{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-size: 10px;
+        position:fixed;
+        top: 0px;
+        right: -200px;
+        height: 100vh;
+        width: 100px;
+        background-color:rgb(40, 36, 36);
+        transition: 0.6s;
+        display: none;
+    }
+    .forme.active{
+        right:0px;
+        background-color:#00b39b;
+        position: absolute;
+        width:100%;
+        height:100vh;
+        font-size: 2rem;
+    }
+    #menup{
+        display: flex;
+        display:block;
+        width: 30px;
+        position:absolute;
+        right: 60px;
+        cursor: pointer;
+        right:Opx;
+    }
+    
+    ul li{
+        
+        margin-bottom:5px;
+        padding: 10px;
+        position: relative;
+        right: -0px;
+        background-color:transparent;
+        display: block;
+    }
+    
+    #cacher{
+        display:block;
+    }
+    .fa-times{
+        width: 500px;
+        color: white;
+        position: relative;
+        right:-10px;
+    }
+    .reste{
+        display: flex;
+        gap: 20px;
+        padding-left: 10px;
+        flex-wrap: wrap;
+    }
+    .logo {
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(0, 179, 155);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding-left:10px;
+        padding-right: 50px;
+    }
+    .hero {
+        text-align: center;
+        padding: 10px 20px;
+    }
+    .hero h1 {
+        color: #00b39b;
+        font-size: 32px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .hero p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #666;
+        padding-left: 20px;
+        text-align: left;
+        font-family: "Inter", serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        width: 50%;
+
+    }
+    .cards-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 20px;
+    }
+    .card {
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        text-align: left;
+        height: 300px;
+    }
+    .healthcare-platform {
+        position:relative;
+    }
+        #fontcart {
+            height: 500px;
+        }
+        .ligne2 {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 30px;
+            height: 400px;
+            position: absolute;
+            left: 200px;
+        }
+        .ligne1 {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 30px;
+            height: 400px;
+            position: absolute;
+            left: 0px;
+        }
+        .healthcare-platform {
+           justify-content: center;
+            padding-top: 20px;
+            padding-right: 10px;
+            background-color: #e0f7f3;
+            display: flex;
+            height: 550px;
+            width: 100%;
+        }
+        .stat-card {
+            width: 150px;
+            height: 270px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 7px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 10px;
+        }
+        .reste {
+            gap: 20px;
+            padding-left: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+}
